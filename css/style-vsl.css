@@ -83,10 +83,6 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .image-gallery img:hover {
-      transform: scale(1.02);
-    }
-
     /* Rodapé */
     .footer {
       text-align: center;
