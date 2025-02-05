@@ -84,7 +84,7 @@
     }
 
     .image-gallery img:hover {
-      transform: scale(0.1);
+      transform: scale(1.02);
     }
 
     /* Rodapé */
