@@ -64,23 +64,28 @@
     }
 
     p {
-      text-align: center;
+      text-align: left;
       font-size: 14px;
+      margin-bottom: 10px;
     }
 
     /* Galeria de Imagens */
     .image-gallery {
       display: flex;
       flex-wrap: wrap;
+      flex-direction: column; /* Coloca as imagens em coluna */
       justify-content: center;
       gap: 10px;
+      width: 100%; /* Ocupa toda a largura */
     }
 
     .image-gallery img {
+      display: block; /* Remove o comportamento inline */
       width: 100%;
       max-width: 100%;
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
     }
 
     /* Rodapé */
@@ -99,3 +104,46 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    footer p {
+      text-align: center;
+    }
+
+    /* Animação de Delay na Div .esconder */
+.esconder {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 2s ease-out 3s forwards; /* Aparece após 3s */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
