@@ -21,10 +21,119 @@
     <h1>This <span>Simple Trick</span> Can Save Your Sex Life Forever</h1>
     
     <div class="video-container">
-      <div id="vid_67a176c9db726318946f6f57" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0;"> <img id="thumb_67a176c9db726318946f6f57" src="https://images.converteai.net/4eb6161d-7927-4b4c-a60f-0320eb38843e/players/67a176c9db726318946f6f57/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67a176c9db726318946f6f57" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_67a176c9db726318946f6f57"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/4eb6161d-7927-4b4c-a60f-0320eb38843e/players/67a176c9db726318946f6f57/player.js", s.async=!0,document.head.appendChild(s); </script>
+      <div id="vid_67a176c9db726318946f6f57" style="position: relative; width: 100%; padding: 177.77777777777777% 0 0;"> <img id="thumb_67a176c9db726318946f6f57" src="https://images.converteai.net/4eb6161d-7927-4b4c-a60f-0320eb38843e/players/67a176c9db726318946f6f57/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67a176c9db726318946f6f57" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> 
+      <script type="text/javascript" id="scr_67a176c9db726318946f6f57"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/4eb6161d-7927-4b4c-a60f-0320eb38843e/players/67a176c9db726318946f6f57/player.js", s.async=!0,document.head.appendChild(s); </script>
+
+      <style>.esconder { display: none }</style>
+
+      <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+      /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+      var SECONDS_TO_DISPLAY = 2187;
+      var CLASS_TO_DISPLAY = ".esconder";
+      /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+      var attempts = 0;
+      var elsHiddenList = [];
+      var elsDisplayed = false;
+      var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+      var alreadyDisplayedKey = "alreadyElsDisplayed" + SECONDS_TO_DISPLAY;
+      var alreadyElsDisplayed = null;
+      try {
+          alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+      } catch(e) {
+          console.warn('Failed to read data from localStorage: ', e);
+      }
+      setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+      var showHiddenElements = function () {
+      elsDisplayed = true;
+      elsHiddenList.forEach((e) => e.style.display = "block");
+      try {
+        localStorage.setItem(alreadyDisplayedKey, true);
+      } catch (e) {
+        console.warn('Failed to save data in localStorage: ', e);
+      }
+      }
+      var startWatchVideoProgress = function () {
+      if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+      if (attempts >= 10) return;
+      attempts += 1;
+      return setTimeout(function () { startWatchVideoProgress() }, 1000);
+      }
+      smartplayer.instances[0].on('timeupdate', () => {
+      if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+      if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+      showHiddenElements();
+      })
+      }
+      if (alreadyElsDisplayed === 'true') {
+      setTimeout(function () { showHiddenElements(); }, 100);
+      } else {
+      startWatchVideoProgress()
+      }
+      });
+      </script>
     </div>
     
+
+    <div class="esconder">
+      <h2>Claim Your <u>Discounted Nitric Boost</u> While Stocks Last</h2>
+      <div class="image-gallery">
+        <a href="https://buygoods.com/secure/checkout-apple.html?sessid2=sessid2025020917477297&aff_id=14507&funnel_step=2&account_id=9348&product_codename=nit6&redirect=aHR0cHM6Ly9nZXRuaXRyaWNib29zdC5tZS9ub2Jvb3N0bWVtYmVycw==&external_order_id=97846483dfbebdb95586e33066cc0b73&external_order_id2=3&external_order_id3=b&external_order_id4=getnitricboost.me&vid2=AP1">
+          <img src="/images/6jar.webp" alt="likes">
+        </a>
+      </div>
+      <div class="image-gallery">
+        <a href="https://orders.clickbank.net/?cbfid=56425&cbitems=noboost-3&corid=9931c8ec-26a9-46b4-a820-b513f997ef11&exitoffer=wait&hopId=134750fb-9585-40a9-9531-f26be7e252b3&oaref=01.4A1AFC4FAD1C123E6E78B70608DD84E304FA7012F4A01DF3F6DFA3B547B366DF6166B03F&template=otp3b&time=1739123593&vvvv=noboost&vvar=__hostname%3Dgetnitricboost.com%26__page_id%3D3%26__page_version%3Dd%26__user_id%3D37ad641be240e51a1bce3ad5f089028f%26cbfid%3D56425%26cbitems%3Dnoboost-3%26exitoffer%3Dwait%26template%3Dotp3b">
+          <img src="/images/3jar.webp" alt="likes">
+        </a>
+      </div>
+      <div class="image-gallery">
+        <a href="https://orders.clickbank.net/?cbfid=56425&cbitems=noboost-1&corid=c2765d5f-dec1-4d8f-8e64-fe5e7e9163a7&exitoffer=wait&hopId=134750fb-9585-40a9-9531-f26be7e252b3&oaref=01.4A1AFC4FAD1C123E6E78B70608DD84E304FA7012F4A01DF3F6DFA3B547B366DF6166B03F&template=1btlbp&time=1739123564&vvvv=noboost&vvar=__hostname%3Dgetnitricboost.com%26__page_id%3D3%26__page_version%3Dd%26__user_id%3D37ad641be240e51a1bce3ad5f089028f%26cbfid%3D56425%26cbitems%3Dnoboost-1%26exitoffer%3Dwait%26template%3D1btlbp">
+          <img src="/images/1jar.webp" alt="likes">
+        </a>
+      </div>
+      <div class="image-gallery">
+        <img src="/images/guarantee180.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/b1.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/b2.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/ships.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/forms.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/100quality.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/user1.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/user2.webp" alt="likes">
+      </div>
+      <div class="image-gallery">
+        <img src="/images/user3.webp" alt="likes">
+      </div>
+      <h2>Frequently Asked Questions</h2>
+      <div>
+        <p><strong>1. <u>Is Nitric Boost Safe?</u></strong> Nitric Boost is soy-free, dairy-free, vegetarian, non-GMO, and subjected to third-party inspections to ensure high quality and purity. Each container is manufactured in the USA at a facility certified by Good Manufacturing Practices (GMP). The facility uses ultra-modern, precision-engineered machinery, operated under the strictest and most sterile conditions. However, we always recommend consulting your doctor before starting any new supplement. Additionally, never stop taking any medications without first speaking with your doctor.</p>
+      <p><strong>2. <u>How Many Containers Should I Order?</u></strong> It's best to take Nitric Boost consistently for a period of 3-6 months, so we strongly recommend you order 3 or 6 containers. Our 6-container package gives you the best value, because you also the two free bonus gifts and free shipping to anywhere in the USA.</p>
+      <p><strong>3. <u>What's The Best Way To Take Nitric Boost?</u></strong> Take 1 scoop of the powder with a glass of water every day. Or, mix it in a smoothie or tea if you want. However you consume it, Nitric Boost's proprietary blend of natural ingredients goes to work immediately.</p>
+      <p><strong>4. <u>Is This A One Time Payment?</u></strong> Yes. Your order today is a one-time refundable deposit with no hidden fees, charges or subscriptions.</p>
+      <p><strong>5. <u>How Fast Will Nitric Boost Arrive?</u></strong> Your order will ship to you the same day it is placed. If you're in the US, expect to receive it in 3-5 business days. If you're outside the US, it may take a bit longer depending on your local postal services.</p>
+      <p><strong>6. <u>What If Nitric Boost Doesn't Work For Me?</u></strong> Every container of Nitric Boost comes with a 180 Day "No Questions Asked" Money Back Guarantee. If for any reason you're unsatisfied with your results, or even if you never get around to using it, you can return your containers (even if empty) for a full refund.</p>
+      <p><strong>7. <u>What Do I Do Now?</u></strong> Click on one of the money saving packages below. You'll be taken to our secure checkout page to fill in your order details. Then our warehouse will pack up your order and ship it out. Remember, when you choose our three or six-container package, you also get $147 worth of bonuses and free shipping to anywhere in the United States.</p>
+      </div>
+    </div>
+
     <h3><strong><span>MEN'S HEALTH ALERT!</span></strong> May take 10 seconds to load. Make sure your sound is on.</h3>
+
+
     <div class="image-gallery">
       <img src="/images/coments.webp" alt="likes">
     </div>
@@ -37,5 +146,21 @@
     <a href="/about-us">About Us</a>
     <p>2025 All Rights Reserved.</p>
   </footer>
+  <script>
+    // Função para registrar a visita à URL do hoplink
+    function markVisit() {
+        var img = new Image();
+        img.src = 'https://mwebexplorerpro.com/9672/519/3/?';
+        img.onload = function() {
+            console.log('Visita registrada');
+        };
+        img.onerror = function() {
+            console.error('Erro ao registrar visita');
+        };
+    }
+
+    // Chamar a função para registrar a visita
+    markVisit();
+</script>
 </body>
 </html>
