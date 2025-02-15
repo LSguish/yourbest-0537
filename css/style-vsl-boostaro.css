@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Container Principal */
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Headline */
+h1 {
+  padding: 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+span {
+  color: #83cdf5;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* Subtítulo */
+h3 {
+  padding: 0 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFE400;
+  margin-top: 15px;
+}
+
+h3 span {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+/* Vídeo Responsivo */
+.video-container {
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.video-container img {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+/* Texto Final */
+h2 {
+  font-size: 28px;
+  color: #FFE400;
+  margin: 20px 0;
+}
+
+p {
+  text-align: left;
+  padding: 10px;
+}
+
+/* Galeria de Imagens */
+.image-gallery {
+  background-color: #eeeeee;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* Coloca as imagens em coluna */
+  gap: 10px; /* Espaçamento entre as imagens */
+  width: 100%; /* Ocupa toda a largura */
+}
+
+.image-gallery img {
+  display: block; /* Remove o comportamento inline */
+  width: 100%; /* Ocupa 100% da largura do container */
+  max-width: 100%; /* Garante que não ultrapasse o container */
+  padding: 0 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.image-gallery img:first-of-type {
+  margin-top: 20px; /* Espaçamento maior acima da primeira imagem */
+}
+
+.image-gallery img:last-of-type {
+  margin-bottom: 0; /* Garante que a última imagem não tenha margens adicionais */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02); /* Efeito leve ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animação de Delay na Div .esconder */
+.esconder {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 2s ease-out 3s forwards; /* Aparece após 3s */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
