@@ -112,6 +112,19 @@ p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.referens {
+      margin-top: 10px;
+      background-color: #FFF;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .referens h3 {
+      padding: 15px 0;
+      font-size: larger;
+      color: #000;
+    }
+
 /* Rodapé */
 .footer {
   text-align: center;
@@ -162,15 +175,5 @@ footer p {
 
   h3 {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 12px;
   }
 }
