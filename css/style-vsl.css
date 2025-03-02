@@ -1,92 +1,118 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #FFF;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 15px;
-    }
+/* Container Principal */
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
 
-    /* Container Principal */
-    .container {
-      width: 100%;
-      max-width: 600px;
-      text-align: center;
-    }
+/* Headline */
+h1 {
+  padding: 15px;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
 
-    /* Headline */
-    h1 {
-      font-size: 22px;
-      padding: 10px;
-    }
+span {
+  color: #83cdf5;
+}
 
-    span {
-      color: #FFC107;
-    }
+.no-wrap {
+  white-space: nowrap;
+}
 
-    /* Subtítulo */
-    h3 {
-      font-size: 16px;
-      font-weight: 400;
-      color: #FFF;
-      margin-bottom: 15px;
-    }
+/* Subtítulo */
+h3 {
+  padding: 0 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFE400;
+  margin-top: 15px;
+}
 
-    /* Vídeo Responsivo */
-    .video-container {
-      position: relative;
-      width: 100%;
-      margin-bottom: 20px; /* Adiciona espaço abaixo do vídeo */
-    }
+h3 span {
+  text-transform: capitalize;
+  color: #fff;
+}
 
-    .video-container div {
-      width: 100%;
-      height: 100%;
-    }
+/* Vídeo Responsivo */
+.video-container {
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+}
 
-    /* Texto Final */
-    h2 {
-      font-size: 20px;
-      color: #FFE400;
-      margin: 15px 0;
-    }
+.video-container img {
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
 
-    p {
-      text-align: left;
-      padding: 10px;
-    }
+/* Texto Final */
+h2 {
+  font-size: 28px;
+  color: #FFE400;
+  margin: 20px 0;
+}
 
-    /* Galeria de Imagens */
-    .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; /* Coloca as imagens em coluna */
-      justify-content: center;
-      gap: 10px;
-      width: 100%; /* Ocupa toda a largura */
-    }
+p {
+  text-align: left;
+  padding: 10px;
+}
 
-    .image-gallery img {
-      display: block; /* Remove o comportamento inline */
-      width: 100%;
-      max-width: 100%;
-      border-radius: 8px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
+/* Galeria de Imagens */
+.image-gallery {
+  background-color: #eeeeee;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* Coloca as imagens em coluna */
+  gap: 10px; /* Espaçamento entre as imagens */
+  width: 100%; /* Ocupa toda a largura */
+}
 
-    .referens {
+.image-gallery img {
+  display: block; /* Remove o comportamento inline */
+  width: 100%; /* Ocupa 100% da largura do container */
+  max-width: 100%; /* Garante que não ultrapasse o container */
+  padding: 0 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.image-gallery img:first-of-type {
+  margin-top: 20px; /* Espaçamento maior acima da primeira imagem */
+}
+
+.image-gallery img:last-of-type {
+  margin-bottom: 0; /* Garante que a última imagem não tenha margens adicionais */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.02); /* Efeito leve ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.referens {
       margin-top: 10px;
       background-color: #FFF;
       border-radius: 8px;
@@ -99,28 +125,35 @@
       color: #000;
     }
 
-    /* Rodapé */
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      padding: 10px;
+.referens .image-gallery {
+      background-color: #fff; 
     }
 
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 5px;
-    }
+/* Rodapé */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: auto;
+}
 
-    .footer a:hover {
-      text-decoration: underline;
-    }
+footer p {
+  text-align: center;
+}
 
-    footer p {
-      text-align: center;
-    }
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
 
-    /* Animação de Delay na Div .esconder */
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animação de Delay na Div .esconder */
 .esconder {
   opacity: 0;
   transform: translateY(20px);
